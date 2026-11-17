@@ -1,4 +1,4 @@
-#include "libb/terminal.h"
+#include "libb/string.h"
 
 void terminal_init() {
     // Initialize terminal settings
@@ -8,7 +8,6 @@ void terminal_init() {
 
 void main() {
     // Main function to start the program
-    terminal_init(); // Call the terminal initialization function
-    
+    printf("NetWare Lunix O/S ( Nestor )\n"); // Print a message to the terminal
     // Additional code for the main program logic can be added here
 }

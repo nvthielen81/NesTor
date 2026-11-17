@@ -1,6 +1,8 @@
 CC=gcc
 TARGET=myos
-C_FILES=kernel.c
+C_FILES=kernel.c		\
+		./libb/string.c	
+
 OBJS=$(C_FILES:.c=.o)
 
 all compile: $(TARGET)
