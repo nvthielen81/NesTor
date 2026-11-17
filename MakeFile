@@ -1,7 +1,7 @@
 CC=gcc
 TARGET=myos
 C_FILES=kernel.c	\
-		./Libb/terminal..c
+		./Libb/terminal.c
 		
 OBJS=$(C_FILES:.c=.o)
 

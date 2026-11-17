@@ -11,11 +11,11 @@ all: finale
 	$(CC) -c $(@:.o=.c) -o $@ -ffreestanding -fno-exceptions -m32
 
 $(TARGET): $(OBJS)
-	$(shell nasm -f elf start.asm -o start.o)
-	$(CC) -m32 -nostdlib -nodefaultlibs -lgcc start.o $? -T linker.ld -z noexecstack -o $(TARGET)
+	$(shell nasm -f elf syss.asm -o syss.o)
+	$(CC) -m32 -nostdlib -nodefaultlibs -lgcc syss.o $? -T linker.ld -z noexecstack -o $(TARGET)
 
 finale:
-	$(shell cd ~/my_cool_os/)
+	$(shell cd ~/nestor/)
 	$(shell cp $(TARGET) ./iso/boot/$(TARGET))
 	$(shell grub-mkrescue iso --output=$(TARGET).iso)
 

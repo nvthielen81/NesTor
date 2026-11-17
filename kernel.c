@@ -1,4 +1,4 @@
-#include "../libb/terminal.h"
+#include "libb/terminal.h"
 
 void terminal_init() {
     // Initialize terminal settings
