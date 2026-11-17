@@ -9,7 +9,6 @@ void terminal_init() {
 void main() {
     // Main function to start the program
     terminal_init(); // Call the terminal initialization function
-    input_recorder_init(); // Call the input recorder initialization function
-
+    
     // Additional code for the main program logic can be added here
 }
